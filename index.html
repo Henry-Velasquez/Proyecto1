@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto 1</title>
+
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font: sans-serif;
+		}
+
+		header{
+			position: relative;
+			margin: 20px auto;
+			width: 1000px;
+			height: 120px;
+			//background: #444;			
+		}
+
+		#logo{
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			width: 200px;
+			height: 60px;
+			/*background: #ccc;*/
+			font-size: 50px;
+			text-align: center;
+			line-height: 60px;
+			}
+
+		.redes{
+			position: absolute;
+			width: 42px;
+			height: 42px;
+			background: #ccc;
+			border-radius: 100%;
+			text-align: center;
+			line-height: 42px;
+			color: wheat;
+		}
+
+		#icono1{
+			top: 42px;
+			right: 120px;
+			background: blue;
+		}
+
+		#icono2{
+			top: 42px;
+			right: 71px;
+			background: green;
+		}
+
+		#icono3{
+			top: 42px;
+			right: 19px;
+			background: red;
+		}
+
+		nav{
+			margin: auto;
+			width: 1000px;
+			height: 48px;
+			//background: #aaa;
+		}
+
+		.botones{
+			float: left;
+			width: 196px;
+			height: 48px;
+			margin: 0px 2px;
+			background: rgba(100, 0, 255, 1);
+			color: wheat;
+			text-align: center;
+			line-height: 48px;
+		}
+
+		.botones:hover{
+			background: rgba(100, 0, 255, .4);
+			color: black;
+		}
+
+		.botones:active{
+			background: rgba(255, 0, 100, 1);
+		}
+
+		#top{
+			margin: 20px auto;
+			width: 1000px;
+			height: 192px;
+			//background: #aaa;
+		}
+
+		#top ul{
+			width: 1010px;
+			height: 192px;
+			/*background: rgb(255, 0, .5);*/
+		}
+
+		#top ul li{
+			float: left;
+			width: 326px;
+			height: 192px;
+			/*background: #ccc;*/
+			margin-right: 10px;
+			text-align: center;
+		}
+
+		#top ul li img{
+			border-radius: 100%;
+			height: 100px;
+		}
+
+		#top ul li h1{
+			font-weight: 100;
+		}
+
+		#top ul li p{
+			font-size: 14px;
+			margin: 10px;
+		}
+
+		section{
+			position: relative;
+			margin: auto;
+			width: 1000px;
+			height: 453px;
+			//background: #aaa;
+		}
+
+		aside#izq{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 200px;
+			height: 453px;
+			/*background: #333;*/
+		}
+
+		aside#izq ul li{
+			background: #aaa;
+			padding: 10px;
+			margin: 2px 10px;
+			list-style: square;
+			list-style-position: inside;
+		}
+
+		aside#izq ul li a{
+			text-decoration: none;
+		}
+
+		article{
+			position: absolute;
+			left: 200px;
+			top: 0;
+			width: 600px;
+			height: 453px;
+			/*background: #666;*/
+		}
+
+		article h1{
+			font-size: 40px;
+			margin: 20px;
+			font-weight: 100;
+		}
+
+		article img{
+			float: left;
+			margin-right: 20px;
+		}
+
+		article p{
+			margin: 5px 20px;
+			font-size: 14px;
+			text-align: justify;
+		}
+
+		aside#der{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 200px;
+			height: 453px;
+			/*background: #333;*/
+		}
+
+		aside#der h1{
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: rgba(100, 0, 255, 1.0);
+			color: wheat;
+			margin-bottom: 5px;
+		}
+
+		aside#der input{
+			padding: 10px;
+			margin: 5px 0;
+			width: 176px;
+		}
+
+		aside#der input[type="text"]{
+			background: url(img/usuario.jpg);
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: contain;
+		}
+
+		aside#der input[type="password"]{
+			background: url(img/pasword.jpg);
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: contain;
+		}
+
+		aside#der input[type="submit"]{
+			width: 200px;
+			background: rgba(100, 0, 100, .5);
+			border: 0;
+		}
+
+		footer{
+			margin: 20px auto;
+			width: 1000px;
+			height: 70px;
+			/*background: #333;*/
+			background: rgba(100, 0, 255, 1.0);
+			text-align: center;
+			line-height: 70px;
+			color: wheat;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">Logotipo</div>
+
+		<div id="icono1" class="redes">x</div>
+		<div id="icono2" class="redes">x</div>
+		<div id="icono3" class="redes">x</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li class="botones">Botón 1</li>
+			<li class="botones">Botón 2</li>
+			<li class="botones">Botón 3</li>
+			<li class="botones">Botón 4</li>
+			<li class="botones">Botón 5</li>
+		</ul>
+	</nav>
+
+	<div id="top">
+		<ul>
+			<li>
+				<img src="img/img01.jpg" width="100"><h1>Lorem ipsum</h1>
+				<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit.</p>
+			</li>
+
+			<li>
+				<img src="img/img02.jpg" width="100"><h1>Lorem ipsum</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+			</li>
+
+			<li>
+				<img src="img/img03.jpg" width="100"><h1>Lorem ipsum</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</li>
+		</ul>
+	</div>
+
+	<section>
+		<aside id="izq">
+			<ul>
+				<li><a href="#"> Link 1 </a></li>
+				<li><a href="#"> Link 2 </a></li>
+				<li><a href="#"> Link 3 </a></li>
+				<li><a href="#"> Link 4 </a></li>
+			</ul>
+		</aside>
+
+		<article>
+			<h1>Lorem Ipsum</h1>
+			<p>
+			<img src="img/foto.png" width="250">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Deleniti quidem vel ab incidunt mollitia! Dolore, nihil, magnam provident eius velit, quae harum deleniti rem pariatur quaerat, vitae placeat possimus consequuntur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore. 
+			</p>
+			<br>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, provident vero optio! Tempora voluptas possimus alias repellat dicta aliquid, quo saepe magni accusantium molestias provident facere eos, hic in ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quod reiciendis, itaque est cum nostrum nulla? Ex et, provident qui. Asperiores distinctio, facere repellat reiciendis enim quia earum, corporis quos!
+			</p>
+
+		</article>
+
+		<aside id="der">
+			<h1>Ingreso</h1>
+			<form>
+				<input type="text" placeholder="Usuario">
+				<input type="password"placeholder="Contraseña">
+				<input type="submit">
+			</form>
+		</aside>
+	</section>
+
+	<footer>
+		&copy;Todos los derechos reservados - Chicos de 5to - 2022
+	</footer>
+</body>
+</html>
